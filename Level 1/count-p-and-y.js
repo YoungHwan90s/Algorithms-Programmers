@@ -13,17 +13,17 @@
 //   return p === y;
 // }
 
-function solution_second(s) {
-  return s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length;
-}
-
-// function solution_third(s) {
-//   let p = s.match(/p/gi) ? s.match(/p/gi).length : 0;
-//   let y = s.match(/y/gi) ? s.match(/y/gi).length : 0;
-
-//   if (p === y) {
-//     return true;
-//   } else if (p === 0 || y === 0) {
-//     return false;
-//   } else return false;
+// function solution_second(s) {
+//   return s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length;
 // }
+
+function solution_third(s) {
+  let p = s.match(/p/ig) ? s.match(/p/ig).length : 0;
+  let y = s.match(/y/ig) ? s.match(/y/ig).length : 0;
+
+  if (p === y) {
+    return true;
+  } else if (p === 0 || y === 0) {
+    return false;
+  } else return false;
+}
