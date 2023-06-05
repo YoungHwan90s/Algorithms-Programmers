@@ -1,21 +1,8 @@
-function maxLength(k, a) {
-  let maxLength = 0;
-  let sum = 0;
-  let i = 0;
+const myMap = new Map();
 
-  for (let j = 0; j < a.length; j++) {
-    sum += a[j];
+const a = 'b'
+// 키와 값을 추가
+myMap.set(a, '123');
+myMap.set(a, '456');
 
-    while (sum > k) {
-      sum -= a[i];
-      i++;
-    }
-
-    const length = j - i + 1;
-    maxLength = Math.max(maxLength, length);
-  }
-
-  return maxLength;
-}
-
-console.log(maxLength(4, [6,4,3,1,2,1,4]));
+console.log(myMap.get(a))

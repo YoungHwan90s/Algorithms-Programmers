@@ -35,17 +35,29 @@
 //     }, []);
 //   }
 
+// function solution(s) {
+//   let keyAndIndexMap = {};
+
+//   return [...s].reduce((array, curr, index) => {
+//     array.push(
+//       keyAndIndexMap[curr] === undefined ? -1 : index - keyAndIndexMap[curr]
+//     );
+//     keyAndIndexMap[curr] = index;
+
+//     return array;
+//   }, []);
+// }
+
 function solution(s) {
-  let keyAndIndexMap = {};
+    let newMap = new Map();
 
-  return [...s].reduce((array, curr, index) => {
-    array.push(
-      keyAndIndexMap[curr] === undefined ? -1 : index - keyAndIndexMap[curr]
-    );
-    keyAndIndexMap[curr] = index;
+    return s.split('').reduce((array, curr, index)=> {
+        array.push(newMap.has(curr) === true ? index - newMap.get(curr) : -1)
 
-    return array;
-  }, []);
+        newMap.set(curr, index);
+        return array;
+    }, [])
+
 }
 
 console.log(solution("banana"));
