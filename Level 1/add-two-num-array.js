@@ -19,15 +19,13 @@ function solution(numbers) {
 
 // 중복값을 없애는 다른 방법
 function solution(numbers) {
-  let array = [];
+  let array = new Set();
 
   for (let i = 0; i < numbers.length - 1; i++) {
     for (let j = i + 1; j < numbers.length; j++) {
-      array.push(numbers[i] + numbers[j]);
+      array.add(numbers[i] + numbers[j]);
     }
   }
 
-  const answer = [...new Set(array)];
-
-  return answer.sort((a, b) => a - b);
+  return Array.from(array).sort((a, b) => a - b);
 }
