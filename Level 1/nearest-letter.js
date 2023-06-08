@@ -49,15 +49,14 @@
 // }
 
 function solution(s) {
-    let newMap = new Map();
+  let newMap = new Map();
 
-    return s.split('').reduce((array, curr, index)=> {
-        array.push(newMap.has(curr) === true ? index - newMap.get(curr) : -1)
+  return s.split("").reduce((array, curr, index) => {
+    array.push(newMap.has(curr) === true ? index - newMap.get(curr) : -1);
 
-        newMap.set(curr, index);
-        return array;
-    }, [])
-
+    newMap.set(curr, index);
+    return array;
+  }, []);
 }
 
 console.log(solution("banana"));
