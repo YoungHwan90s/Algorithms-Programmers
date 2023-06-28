@@ -1,26 +1,42 @@
 // 해쉬 테이블로 이름이랑 점수 저장하고
 // photo 배열 돌면서 그 사람 점수가 있으면 그 그룹 점수를 담을 변수에 넣고 result 배열에 추가
+
+// function solution(name, yearning, photo) {
+//   const scores = {};
+
+//   // 해시 테이블에 각 사람의 그리움 점수 저장
+//   for (let i = 0; i < name.length; i++) {
+//     scores[name[i]] = yearning[i];
+//   }
+
+//   const result = [];
+
+//   // 각 사진별 추억 점수 계산
+//   for (let i = 0; i < photo.length; i++) {
+//     let photoScore = 0;
+//     for (let j = 0; j < photo[i].length; j++) {
+//       const person = photo[i][j];
+//       if (scores.hasOwnProperty(person)) {
+//         photoScore += scores[person];
+//       }
+//     }
+//     result.push(photoScore);
+//   }
+
+//   return result;
+// }
+
+// 수정 코드
+
 function solution(name, yearning, photo) {
   const scores = {};
-
-  // 해시 테이블에 각 사람의 그리움 점수 저장
   for (let i = 0; i < name.length; i++) {
     scores[name[i]] = yearning[i];
   }
 
-  const result = [];
-
-  // 각 사진별 추억 점수 계산
-  for (let i = 0; i < photo.length; i++) {
-    let photoScore = 0;
-    for (let j = 0; j < photo[i].length; j++) {
-      const person = photo[i][j];
-      if (scores.hasOwnProperty(person)) {
-        photoScore += scores[person];
-      }
-    }
-    result.push(photoScore);
-  }
+  const result = photo.map((persons) =>
+    persons.reduce((acc, person) => acc + (scores[person] || 0), 0)
+  );
 
   return result;
 }
