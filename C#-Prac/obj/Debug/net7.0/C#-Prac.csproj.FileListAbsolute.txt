@@ -1,0 +1,15 @@
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/bin/Debug/net7.0/C#-Prac
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/bin/Debug/net7.0/C#-Prac.deps.json
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/bin/Debug/net7.0/C#-Prac.runtimeconfig.json
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/bin/Debug/net7.0/C#-Prac.dll
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/bin/Debug/net7.0/C#-Prac.pdb
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.csproj.AssemblyReference.cache
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.GeneratedMSBuildEditorConfig.editorconfig
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.AssemblyInfoInputs.cache
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.AssemblyInfo.cs
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.csproj.CoreCompileInputs.cache
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.dll
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/refint/C#-Prac.dll
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.pdb
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/C#-Prac.genruntimeconfig.cache
+/Users/younghwan/Desktop/sparta/Programmers/C#-Prac/obj/Debug/net7.0/ref/C#-Prac.dll
